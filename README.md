@@ -189,7 +189,7 @@ All JSON API responses disable caching. Public creation returns only the generat
 │   ├── data-dictionary.md      # Data fields, enums, indexes, and API representations
 │   ├── file-map.md             # Detailed responsibility for every source/support area
 │   ├── product-requirements.md # Personas, requirements, acceptance criteria, and roadmap
-│   └── screenshots/README.md   # Portfolio screenshot capture plan
+│   └── screenshots/README.md   # Live-demo and safe capture guidance
 ├── drizzle/                    # Generated, reviewable SQL migrations and metadata
 ├── examples/d1/                # Starter D1 example; not part of the CivicFlow runtime
 ├── hooks/                      # Shared responsive UI hook supplied by the starter
@@ -228,31 +228,19 @@ CivicFlow demonstrates practical digital product and operations skills:
 
 These points describe the work demonstrated in this repository. They do not imply experience with, endorsement by, or affiliation with any organization.
 
-## Publish to GitHub
+## Portfolio safeguards
 
-1. Create an empty GitHub repository, for example `civicflow-service-request-tracker`.
-2. Confirm that `.env.local`, `.wrangler/`, `.sites-runtime/`, `.vinext/`, `dist/`, and `node_modules/` remain ignored.
-3. Initialize and push from this project directory:
-
-```bash
-git init
-git add .
-git commit -m "Build CivicFlow service request tracker"
-git branch -M main
-git remote add origin <your-github-repository-url>
-git push -u origin main
-```
-
-4. Add screenshots using the naming and capture guidance in [docs/screenshots/README.md](docs/screenshots/README.md).
-5. Add the deployed portfolio URL to the GitHub repository description and the top of this README.
-6. Never commit real administrator credentials, production secrets, resident information, or local D1 state.
+- The [public repository](https://github.com/MuznaImran/civicflow-service-request-tracker) and [live demo](https://civicflow-request-tracker.muznaimran328.chatgpt.site) are configured for synthetic portfolio data.
+- `.env.local`, `.wrangler/`, `.sites-runtime/`, `.vinext/`, `dist/`, and `node_modules/` remain excluded from version control.
+- Do not commit real administrator credentials, production secrets, resident information, exported databases, or local D1 state.
+- Follow the [demo and screenshot guidance](docs/screenshots/README.md) before publishing visual evidence.
 
 ## Product documentation
 
 - [Product requirements](docs/product-requirements.md)
 - [Data dictionary](docs/data-dictionary.md)
 - [Complete file map](docs/file-map.md)
-- [Screenshot plan](docs/screenshots/README.md)
+- [Demo and screenshot guidance](docs/screenshots/README.md)
 
 ## License
 
